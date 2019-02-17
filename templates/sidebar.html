@@ -12,6 +12,16 @@
 			<p></p>
 		</div>
 		<nav class="sidebar-nav">
+			{% if DISPLAY_PAGES_ON_MENU %}
+				<ul class="sidebar-nav-pages">
+				{% for p in pages %}
+					<li>
+						<a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+					</li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+
 			{% for name, link in SOCIAL %}
 				{% if name == 'email' %}
 					<a class="sidebar-nav-item" href="mailto:{{ link }}">
