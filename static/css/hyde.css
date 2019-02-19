@@ -177,6 +177,11 @@ a.sidebar-nav-item.active:focus {
   }
 }
 
+.footer {
+  border-top: #eeeeee 1px solid;
+  color: #999999;
+  font-size: .6rem;
+}
 
 /*
  * Reverse layout
