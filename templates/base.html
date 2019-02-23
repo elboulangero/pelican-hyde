@@ -27,6 +27,10 @@
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/poole.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/hyde.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/syntax.css" />
+		{% if page %}
+		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/page-{{ page.slug }}.css" />
+		{% endif %}
+
 		{% if FONT_AWESOME_JS %}
 			<script src="{{ FONT_AWESOME_JS }}" crossorigin="anonymous"></script>
 		{% elif FONT_AWESOME_CSS %}
