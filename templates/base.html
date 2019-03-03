@@ -34,7 +34,14 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
 
 		<!-- RSS -->
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		{% if FEED_ALL_ATOM %}
+			<link rel="alternate" type="application/atom+xml" title="{{ SITENAME }} Atom Feed" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}"/>
+		{% endif %}
+		{% if FEED_ALL_RSS %}
+			<link rel="alternate" type="application/rss+xml" title="{{ SITENAME }} RSS Feed" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}"/>
+		{% endif %}
+
+		<!-- Analytics -->
 		{% include 'fragments/google_analytics.html' %}
 	</head>
 
