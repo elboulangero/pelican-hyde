@@ -14,11 +14,10 @@
 		<nav class="sidebar-nav">
 			{% if DISPLAY_PAGES_ON_MENU %}
 				<ul class="sidebar-nav-pages">
-				{% for p in pages %}
-					<li>
-						<a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
-					</li>
-				{% endfor %}
+					<li><a href="{{ SITEURL }}/pages/about/">About</a></li>
+					<li><a href="{{ SITEURL }}/">Blog</a></li>
+					<li><a href="{{ SITEURL }}/pages/foss/">FOSS</a></li>
+					<li><a href="{{ SITEURL }}/pages/work/">Work</a></li>
 				</ul>
 			{% endif %}
 
