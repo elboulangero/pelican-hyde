@@ -212,6 +212,15 @@ a.sidebar-social-item.active:focus {
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
+/* Custom */
+.theme-base-me .sidebar {
+  background-color: #00384d;
+}
+.theme-base-me .content a,
+.theme-base-me .related-posts li a:hover {
+  color: #00384d;
+}
+
 /* Red */
 .theme-base-08 .sidebar {
   background-color: #ac4142;
