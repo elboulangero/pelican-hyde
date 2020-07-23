@@ -58,6 +58,8 @@ html {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, transparent, #ff5a67, transparent) 1;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -67,12 +69,14 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: center;
+    border-right: 3px solid;
+    border-image: linear-gradient(to bottom, transparent, #ff5a67, transparent) 1;
   }
 }
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: #303030;
 }
 
 /* About section */
@@ -119,14 +123,18 @@ html {
   font-size: .8rem;
   font-weight: bold;
 }
+a.sidebar-social-item {
+  color: #fafaf8;
+  transition: all .3s ease-in-out;
+}
 a.sidebar-social-item:hover,
 a.sidebar-social-item:focus {
-  background: #0001;
+  filter: contrast(150%) opacity(70%);
   text-decoration: none;
 }
 .sidebar-social-item.active {
-  color: #0001;
   background: #fff;
+  filter: contrast(150%) opacity(70%);
 }
 a.sidebar-social-item.active:hover,
 a.sidebar-social-item.active:focus {
@@ -145,6 +153,9 @@ a.sidebar-social-item.active:focus {
  */
 
 @media (min-width: 48em) {
+  .sidebar-nav-pages li {
+    display: list-item;
+  }
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
@@ -217,12 +228,32 @@ a.sidebar-social-item.active:focus {
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
 /* Custom */
+.color-email {
+  background-color: #ff5a67;
+}
+.color-linkedin {
+  background-color: #517f8d;
+}
+.color-stack-overflow {
+  background-color: #7fc06e;
+}
+.color-rss {
+  background-color: #ffcc1b;
+}
+
 .theme-base-me .sidebar {
-  background-color: #00384d;
+  color: #303030;
+  background-color: #fafaf8;
 }
 .theme-base-me .content a,
 .theme-base-me .related-posts li a:hover {
-  color: #00384d;
+  color: #ff5a67;
+  background-color: #fafaf8;
+  font-weight: bold;
+}
+
+.theme-base-me .content .post-title-index a {
+  color: #303030;
 }
 
 /* Red */

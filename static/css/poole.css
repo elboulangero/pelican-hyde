@@ -60,7 +60,7 @@ html {
 
 body {
   color: #515151;
-  background-color: #fff;
+  background-color: #fafaf8;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -153,11 +153,10 @@ pre {
   font-family: Hack, monospace;
 }
 code {
-  padding: .25em .5em;
+  padding: .2rem .3rem .1rem;
   font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
-  border-radius: 3px;
+  background-color: #bbe1bd66;
+  border-radius: .2rem;
 }
 pre {
   display: block;
@@ -170,7 +169,8 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #e6e6dc;
+  border-radius: .6rem;
 }
 pre code {
   padding: 0;
@@ -354,7 +354,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: #ff5a67;
   font-size: .8rem;
 }
 
