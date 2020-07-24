@@ -5,7 +5,9 @@
 			<h1>
 				<a href="/">
 					<img class="profile-picture" src="{{ SITEURL }}/images/{{ PROFILE_IMAGE }}">
-					{{ AUTHOR }}
+					{% for name in AUTHOR.rsplit(' ', 1) %}
+					{% if loop.last %} <b>{{ name }}</b>{% else %}{{ name }}{% endif %}
+					{% endfor %}
 				</a>
 			</h1>
 			<p class="lead">{{ BIO }} </p>
