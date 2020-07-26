@@ -52,3 +52,15 @@ to modify the templates.
 ## License
 
 Released under the [MIT license](LICENSE)
+
+
+## WIP WIP
+
+Fonts:
+- font: <https://fonts.google.com/specimen/Cantarell>
+- monospace font: <https://sourcefoundry.org/hack/>
+
+Colors inspired from:
+- <https://github.com/ajlende/base16-atlas-scheme>
+(with some modifications)
+
