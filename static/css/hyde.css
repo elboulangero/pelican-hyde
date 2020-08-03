@@ -101,6 +101,9 @@ html {
   list-style: none;
   padding-left: 0;
 }
+.sidebar-nav li.active {
+  font-weight: bold;
+}
 .sidebar-social {
   display: flex;
   justify-content: center;
