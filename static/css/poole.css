@@ -346,6 +346,9 @@ tbody tr:nth-child(odd) th {
   margin-top: 0;
   font-size: 1.5rem;
 }
+.page-title {
+  margin-bottom: 1rem;
+}
 
 /* Meta data line below post title */
 .post-date {
