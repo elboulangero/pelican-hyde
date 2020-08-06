@@ -205,7 +205,67 @@ a.sidebar-social-item.active:focus {
   }
 }
 
+/*
+ * About page
+ */
 
+h2.line-on-sides {
+  border-bottom: 2px solid #313131;
+  letter-spacing: .2rem;
+  line-height: 0;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2.line-on-sides>span {
+  background: #fff;
+  padding: 0 1rem;
+}
+
+.page table {
+  font-size: smaller;
+}
+
+.page th {
+  text-align: left;
+}
+
+.experience {
+  float: left;
+  width: 100%
+}
+
+.experience img {
+  margin: 0;
+  margin-bottom: 1rem;
+  max-width: 80%;
+  max-height: 4.5rem;
+  float: right;
+}
+
+.experience table {
+  font-size: unset;
+}
+
+.experience tbody tr td {
+  background-color: unset;
+}
+
+.experience tbody td:first-child {
+  text-align: center;
+}
+
+.experience-half1 {
+  float: left;
+  min-width: 50%;
+}
+
+.experience-half2 {
+  overflow: hidden;
+  width: auto;
+}
 
 /*
  * Themes
