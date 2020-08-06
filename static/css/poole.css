@@ -243,8 +243,12 @@ table {
 }
 td,
 th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  padding-left: .5rem;
+  vertical-align: top;
+}
+tr td:first-child,
+tr th:first-child {
+  padding-left: 0;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
