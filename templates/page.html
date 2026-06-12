@@ -3,7 +3,11 @@
 {% block content %}
 <div class="page">
 	<h1 class="page-title">{{ page.title }}</h1>
+	{% if page.slug == "debian-lts" %}
+	{{ page.content | auto_links }}
+	{% else %}
 	{{ page.content }}
+	{% endif %}
 </div>
 {% endblock %}
 
